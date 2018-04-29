@@ -23,7 +23,6 @@ header, footer {
   }
 }
 
-/* Demo Specific Styles */
 body {
   margin: 0 auto;
   max-width: 56em;
@@ -47,7 +46,7 @@ footer {
     padding: 0;
     overflow: hidden;
 	color: #000000;
-	font-size: 2em;
+	font-size: 1.75em;
 
 }
 
@@ -80,3 +79,7 @@ header {
 .hero { clear: all;
         width: 100%;
 		}
+		
+.menu {
+	border: 1px solid black;
+}
