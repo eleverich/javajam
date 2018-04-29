@@ -1,58 +1,82 @@
 /* Eric Leverich CSS */
 
-body {background-color: #9F7527;}
+body {background-color: #ffffff;}
 
     font-family: "Lato", sans-serif;
 }
 
-	
-	
-/* Link bar */
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+ .grid {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-gap: 1em;
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #FEC863;
+header, footer {
+  grid-column: 1 / 4;
+	overflow: auto;
+}
+
+@media all and (max-width: 700px) {
+  aside,
+  article {
+    grid-column: 1 / 4;
+  }
+}
+
+/* Demo Specific Styles */
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+
+aside,
+article,
+footer {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
+.navigation {
+	float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	color: #000000;
+	font-size: 2em;
+
+}
+
+li {
+    float: left;
+		vertical-align: middle;   
+
+}
+
+li a {
     display: block;
-    transition: 0.3s;
+    color: #000000;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+	
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
+li a:hover {
+    background-color: #f0f0f0;
 }
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+.logo  > img{ 
+    vertical-align: middle;   
+    float: left;
 }
+header {
 
-div.toppic {
-    position: static;
-    border: 3px solid #BF7D01;
-	height: 200px;
-    width: 50%;
+    
 }
-img {
-position: absolute;
-right: 0px;
-   
-    z-index: -1;}
-
- h1 { font-size: 600%; }
+.hero { clear: all;
+        width: 100%;
+		}
